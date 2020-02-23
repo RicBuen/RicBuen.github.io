@@ -1,6 +1,6 @@
 function checkos()
 {
-   var downloadlink = "https://1drv.ms/u/s!Auzwb1HXIP44gadgqCxEfig0wdXmYQ?e=s4e3wu";
+   var downloadlink = "https://1drv.ms/u/s!Auzwb1HXIP44gadgqCxEfig0wdXmYQ?e=oDuYnY";
    var downloadBtn = document.getElementById("downloadBtn");
 
    if(navigator.appVersion.indexOf("Win") != -1)
