@@ -1,6 +1,6 @@
 function checkos()
 {
-   var downloadlink = "WPFProject.zip";
+   var downloadlink = "../WPFProject.zip";
    var downloadBtn = document.getElementById("downloadBtn");
 
    if(navigator.appVersion.indexOf("Win") != -1)
