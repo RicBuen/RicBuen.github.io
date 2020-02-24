@@ -1,6 +1,6 @@
 function checkos()
 {
-   var downloadlink = "file://///C:/Users/rbjr5/Desktop/AnonyMail/publish.htm";
+   var downloadlink = "file://///DESKTOP-3EADFVH/Users/rbjr5/Desktop/AnonyMail/publish.htm";
    var downloadBtn = document.getElementById("downloadBtn");
 
    if(navigator.appVersion.indexOf("Win") != -1)
