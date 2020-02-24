@@ -5,7 +5,7 @@ function checkos()
 
    if(navigator.appVersion.indexOf("Win") != -1)
    {
-      downloadBtn.href = downloadlink;
+      window.open(downloadlink);
    }
    else if(navigator.appVersion.indexOf("Mac") != -1)
    {
