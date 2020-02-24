@@ -1,6 +1,6 @@
 function checkos()
 {
-   var downloadlink = "../AnonyMail/publish.htm";
+   var downloadlink = "../AnonyMail.zip";
    var downloadBtn = document.getElementById("downloadBtn");
 
    if(navigator.appVersion.indexOf("Win") != -1)
