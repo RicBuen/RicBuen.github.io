@@ -1,4 +1,25 @@
 .slideshow_sections
 {
    display: none;
+   font-family: serif;
+}
+
+/* Next & previous buttons */
+.prev, .next
+{
+   padding: 10px;
+   cursor: pointer;
+   width: auto;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+   -webkit-user-select: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover
+{
+   background-color: rgba(0, 0, 0, 0.8);
 }
