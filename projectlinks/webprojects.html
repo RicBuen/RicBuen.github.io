@@ -14,6 +14,7 @@
 
            <!-- Other css files -->
            <link rel = "stylesheet" href = "../css files/portfolio.css"/>
+           <link rel = "stylesheet" href = "../css files/webprojects.css"/>
       </head>
 
 
@@ -27,15 +28,17 @@
                 </ul>
            </nav>
 
-           <div id = "web_projects" style = "text-align: center; font-family: serif;">
-                <a href = "../sections/projects.html" class = "btn btn-primary"> Go back to the projects page </a>
+           <a href = "../sections/projects.html" class = "btn btn-primary" style = "font-family: serif;"> Go back to the projects page </a>
 
-                <h2 style = "margin-top: 2%; color: white;"> Web projects completed </h2>
+           <div id = "webprojects_list" style = "font-family: serif;">
+                <div class = "webproject" style = "margin: 10% 10% 0 10%; border-radius: 5px 5px 0 0;">
+                     <h3 style = "text-align: center; padding: 10px;"> Web projects completed </h3>
+                </div>
 
-                <div style = "margin: 5%; padding: 5%; border-style: solid; border-radius: 10px; background-color:lightgrey;">
-                     <img style = "width: 25%;" src = "../projectpics/intellichat.PNG"></img>
+                <div class = "webproject d-flex" style = "margin: 0 10% 0 10%;">
+                     <img src = "../projectpics/intellichat.PNG"></img>
                      <h5> Intellichat </h5>
-                     <h6 class = "mb-2 text-muted"> January 2019 - August 2019 </h6>
+                     <h6> January 2019 - August 2019 </h6>
                      <p>
                         This website is a forum where users can create threads on certain topics of a particular
                         subject. This forum spans a number of different subjects with different topics. To access the forum,
@@ -43,21 +46,18 @@
                         messages to each other, view newly created threads, and the layout of the forum is straightforward and easy
                         to use.
                      </p>
-                     <a class = "btn btn-success" href = "https://intellichat.000webhostapp.com/"> Visit Website </a>
+                     <a class = "goto" href = "https://intellichat.000webhostapp.com/"> Visit Website </a>
                 </div>
-
-                <div style = "margin-top: 2%;"></div>
-
-                <div style = "margin: 5%; padding: 5%; border-style: solid; border-radius: 10px; background-color:lightgrey;">
-                     <img style = "width: 25%;" src = "../projectpics/myworkload.PNG"></img>
+                <div class = "webproject d-flex" style = "margin: 0 10% 10% 10%;">
+                     <img src = "../projectpics/myworkload.PNG"></img>
                      <h5> myworkload </h5>
-                     <h6 class = "mb-2 text-muted"> May 2019 - September 2019 </h6>
+                     <h6> May 2019 - September 2019 </h6>
                      <p>
                         This website is a task manager website where users can go and create and organize all their daily tasks for a particular day.
                         Users can choose to add their tasks either to their daily schedule or their future task list. Users can also even choose to add
                         and email or text message of a description of their task to be completed. Layout is straightforward and easy to use.
                      </p>
-                     <a class = "btn btn-success" href = "https://myworkload.000webhostapp.com/"> Visit Website </a>
+                     <a class = "goto" href = "https://myworkload.000webhostapp.com/"> Visit Website </a>
                 </div>
            </div>
       </body>

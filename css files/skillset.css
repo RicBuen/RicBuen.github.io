@@ -1,7 +1,10 @@
 .slideshow_sections
 {
    display: none;
+   position: absolute;
+
    font-family: serif;
+   text-align: center;
 }
 
 /* Next & previous buttons */

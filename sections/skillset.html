@@ -13,14 +13,17 @@
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
           <!-- Other JavaScript files  -->
-          <script src = "../js files/slideshow.js"></script>
+          <script src = "../js files/skillset.js"></script>
 
           <!-- Other css files -->
           <link rel = "stylesheet" href = "../css files/portfolio.css"/>
-          <link rel = "stylesheet" href = "../css files/slideshow.css"/>
+          <link rel = "stylesheet" href = "../css files/skillset.css"/>
+
+          <!-- Main jQuery file -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      </head>
 
-     <body>
+     <body style = "background-color: #A17FB8;" onload = "loadPage()">
           <nav class = "navbar navbar-expand-sm bg-dark justify-content-center">
                <ul class = "navbar-nav" style = "font-family: serif;">
                    <li class = "nav-item"> <a class = "nav-link" href = "aboutme.html"> About me </a> </li>
@@ -30,11 +33,11 @@
                </ul>
           </nav>
 
-          <div class = "row">
+          <div class = "row" style = "color: white;">
             <div class = "col-lg-4"><a onclick = "changeSections(-1)" class = "prev" style = "float: left;">&#10094;</a></div>
 
                <div class = "col-lg-4">
-                    <div class = "skillset_slideshow">
+                    <div class = "skillset_slideshow" style = "display: none;">
                          <!-- Areas of specialty section -->
                          <div class = "slideshow_sections" style = "display: initial;">
                               <h2> Areas of specialty </h2>
@@ -66,8 +69,8 @@
                          </div>
 
                          <!-- Language skill section -->
-                         <div class = "slideshow_sections">
-                              <h2> Language Proficiency </h2>
+                         <div class = "slideshow_sections" style = "color: black;">
+                              <h2 style = "text-align: center;"> Language Proficiency </h2>
 
                               <ul class = "list-group">
                                   <li class = "list-group-item"> HTML5 </li>

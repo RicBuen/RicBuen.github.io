@@ -14,9 +14,15 @@
 
           <!-- Other css files -->
           <link rel = "stylesheet" href = "../css files/portfolio.css"/>
+
+          <!-- Other JavaScript files -->
+          <script src = "../js files/projects.js"></script>
+
+          <!-- Main jQuery file -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      </head>
 
-     <body style = "background-image: url('../backgroundpics/programmingwallpaper.jpg'); background-repeat: no-repeat; background-size: cover;">
+     <body onload = "fadeEffect()" style = "background-image: url('../backgroundpics/programmingwallpaper.jpg'); background-repeat: no-repeat; background-size: cover;">
           <nav class = "navbar navbar-expand-sm bg-dark justify-content-center">
                <ul class = "navbar-nav" style = "font-family: serif;">
                    <li class = "nav-item"> <a class = "nav-link" href = "aboutme.html"> About me </a> </li>
@@ -27,12 +33,12 @@
           </nav>
 
           <div id = "project_links" style = "font-family: serif; text-align: center; padding-top: 5%;">
-               <h2 style = "color: white;"> Click any of the below to view web or app projects completed </h2>
+               <h2 style = "color: white; display: none;"> Click any of the below to view web or app projects completed </h2>
 
                <div style = "padding-top: 3%;"></div>
 
-               <a class = "btn btn-primary" href = "../projectlinks/webprojects.html"> Web Projects </a>
-               <a class = "btn btn-primary" href = "../projectlinks/appprojects.html"> App Projects </a>
+               <a class = "btn btn-primary" href = "../projectlinks/webprojects.html" style = "display: none;"> Web Projects </a>
+               <a class = "btn btn-primary" href = "../projectlinks/appprojects.html" style = "display: none;"> App Projects </a>
           </div>
      </body>
 </html>
