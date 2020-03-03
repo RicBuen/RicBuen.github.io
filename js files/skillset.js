@@ -1,32 +1,14 @@
-var sectionIndex = 1; //Starting starting index
-showSections(sectionIndex);
-
-//For changing sections
-function changeSections(n)
-{
-   showSections(sectionIndex += n); //sectionIndex = sectionIndex + n
-}
-
-//For showing the sections
-function showSections(n)
-{
-  var i;
-  var sections = document.getElementsByClassName("slideshow_sections"); //gets the section slides
-
-  if(n > sections.length){ sectionIndex = 1 } //if n is greater than the number of slides, set it back to 1
-  if(n < 1){ sectionIndex = sections.length }
-
-  for (i = 0; i < sections.length; i++)
-  {
-     sections[i].style.display = "none";
-  }
-
-  sections[sectionIndex-1].style.display = "initial";
-}
-
-function loadPage()
+function fadeEffect()
 {
    $(document).ready(function(){
-     $(".skillset_slideshow").fadeIn(2000);
+     $("#skillset_section_title").fadeIn();
+
+     $(".specialty_sections:nth-of-type(1)").delay(1000).fadeIn(1000);
+     $(".specialty_sections:nth-of-type(2)").delay(2000).fadeIn(1000);
+     $(".specialty_sections:nth-of-type(3)").delay(3000).fadeIn(1000);
    });
 }
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});

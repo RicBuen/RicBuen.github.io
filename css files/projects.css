@@ -1,0 +1,29 @@
+#web_projects
+{
+   display: flex;
+}
+
+#webproject_title, #appproject_title
+{
+   display: none;
+   font-family: serif;
+   text-align: center;
+}
+
+.card-img-top
+{
+   width: 100%;
+}
+
+.web_project_element, .app_project_element
+{
+   display: none;
+
+   background-color: #272b2e;
+   color: white;
+
+   width: 350px;
+
+   margin: 10px;
+   padding: 15px;
+}

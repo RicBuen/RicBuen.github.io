@@ -8,18 +8,19 @@
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
           <!-- Bootstrap JS files -->
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
           <!-- Other css files -->
           <link rel = "stylesheet" href = "../css files/portfolio.css"/>
+          <link rel = "stylesheet" href = "../css files/projects.css"/>
 
           <!-- Other JavaScript files -->
           <script src = "../js files/projects.js"></script>
 
-          <!-- Main jQuery file -->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <!-- Icon library -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      </head>
 
      <body onload = "fadeEffect()" style = "background-image: url('../backgroundpics/programmingwallpaper.jpg'); background-repeat: no-repeat; background-size: cover;">
@@ -28,17 +29,89 @@
                    <li class = "nav-item"> <a class = "nav-link" href = "aboutme.html"> About me </a> </li>
                    <li class = "nav-item"> <a class = "nav-link" href = "skillset.html"> Skills and Knowledge </a> </li>
                    <li class = "nav-item"> <a class = "nav-link" href = "#" style = "background-color: green;"> Projects </a> </li>
-                   <li class = "nav-item"> <a class = "nav-link" href = "contacts.html"> Contacts </a> </li>
+               </ul>
+
+               <ul class = "navbar-nav ml-auto" style = "font-family: serif;">
+                   <li class = "nav-item contacts-item">
+                       <a class = "nav-link" data-toggle="popover" title="Need to contact me by phone" data-content="347-891-7947">
+                          <i class = "fa fa-phone"></i>
+                       </a>
+                   </li>
+                   <li class = "nav-item contacts-item">
+                       <a class = "nav-link" data-toggle="popover" title="Need to contact me by email" data-content="rbuen4455@gmail.com">
+                          <i class = "fa fa-google"></i>
+                       </a>
+                   </li>
+                   <li class = "nav-item contacts-item"> <a class = "nav-link" href = "https://github.com/RicBuen"> <i class = "fa fa-github"></i> </a> </li>
                </ul>
           </nav>
 
-          <div id = "project_links" style = "font-family: serif; text-align: center; padding-top: 5%;">
-               <h2 style = "color: white; display: none;"> Click any of the below to view web or app projects completed </h2>
+          <div id = "project_links" style = "font-family: serif; text-align: center; color: white;">
+               <h2 id = "projectssection_title" style = "display: none;"> Click any of the below to view web or app projects completed </h2>
 
-               <div style = "padding-top: 3%;"></div>
+               <a id = "webprojects_link" class = "btn btn-primary" style = "display: none;" onclick = "displayWebProjects()"> Web Projects </a>
+               <a id = "appprojects_link" class = "btn btn-primary" style = "display: none;" onclick = "displayAppProjects()"> App Projects </a>
 
-               <a class = "btn btn-primary" href = "../projectlinks/webprojects.html" style = "display: none;"> Web Projects </a>
-               <a class = "btn btn-primary" href = "../projectlinks/appprojects.html" style = "display: none;"> App Projects </a>
+               <div style = "margin-top: 2%;"></div>
+
+               <!-- List of web projects -->
+               <h1 id = "webproject_title"> Completed Web Projects </h1>
+               <div id = "web_projects" class = "container">
+                    <div class="card web_project_element">
+                         <img class="card-img-top" src = "../projectpics/intellichat.PNG"></img>
+
+                         <div class="card-body">
+                              <h4 class="card-title"> Intellichat </h4>
+                              <p class="card-text">
+                                 <i> January 2019 - August 2019 </i>
+                                 <br/>
+                                 This website is a forum where users can create threads on certain topics of a particular
+                                 subject. This forum spans a number of different subjects with different topics. To access the forum,
+                                 users will have to first register for an account before creating a desired thread. Users can send private
+                                 messages to each other, view newly created threads, and the layout of the forum is straightforward and easy
+                                 to use.
+                              </p>
+                              <a class = "btn btn-success" href = "https://intellichat.000webhostapp.com/"> Visit Website </a>
+                         </div>
+                    </div>
+
+                    <div class = "card web_project_element">
+                         <img class="card-img-top" src = "../projectpics/myworkload.png"></img>
+
+                         <div class="card-body">
+                              <h5 class="card-title"> myworkload </h5>
+                              <p class="card-text">
+                                 <i> May 2019 - September 2019 </i>
+                                 <br/>
+                                 This website is a task manager website where users can go and create and organize all their daily tasks for a particular day.
+                                 Users can choose to add their tasks either to their daily schedule or their future task list. Users can also even choose to add
+                                 and email or text message of a description of their task to be completed. Layout is straightforward and easy to use.
+                              </p>
+                              <a class = "btn btn-success" href = "https://myworkload.000webhostapp.com/"> Visit Website </a>
+                         </div>
+                    </div>
+               </div>
+
+               <!-- List of app projects -->
+               <h1 id = "appproject_title"> Completed App Projects </h1>
+               <div id = "app_projects" class = "container">
+                    <div class = "card app_project_element">
+                         <img class="card-img-top" src = "../projectpics/anonymail.png"></img>
+
+                         <div class="card-body">
+                              <h5 class="card-title"> Anonymail </h5>
+                              <p class="card-text">
+                                 <i> August 2019 - February 2020 </i>
+                                 <br/>
+                                 This windows based app allows users to send private messages and/or messages that need to be privately
+                                 or safely sent that cannot be done on the more mainstream email clients such as Gmail, Outlook, or Yahoo.
+                                 This app does not support sending email from Anonymail to mainstream email clients such as Gmail, Outlook or Yahoo,
+                                 and you can only send an recieve emails to users who have an AnonyMail account!
+                              </p>
+                              <a id = "downloadBtn" class = "btn btn-success" onclick = "checkos()"> Download app (Only for Windows! Will not work for Mac or Linux!) </a>
+                         </div>
+                    </div>
+               </div>
           </div>
      </body>
 </html>

@@ -1,28 +1,43 @@
-.slideshow_sections
+h2
 {
-   display: none;
-   position: absolute;
+   margin-top: 10px;
+   margin-bottom: 3%;
 
    font-family: serif;
+}
+
+img
+{
+   width: 50px;
+}
+
+.skillset_section
+{
    text-align: center;
-}
-
-/* Next & previous buttons */
-.prev, .next
-{
-   padding: 10px;
-   cursor: pointer;
-   width: auto;
    color: white;
-   font-weight: bold;
-   font-size: 20px;
-   border-radius: 0 3px 3px 0;
-   user-select: none;
-   -webkit-user-select: none;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover
+.specialty_sections
 {
-   background-color: rgba(0, 0, 0, 0.8);
+   font-family: 'Courgette', ;
+
+   display: none;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover
+{
+   background-color: #DCDCDC;
+}
+
+.list-group
+{
+   font-size: 25px;
+
+   font-family: 'Courgette', ;
+   font-family: 'Orbitron', ;
+}
+
+.language-item, .addknowledge-item, .osknowledge-item
+{
+   background-color: #313639; /* off black color */
 }

@@ -1,3 +1,30 @@
+#about_me
+{
+   display: none;
+
+   width: 1%;
+   height: auto;
+
+   padding: 2%;
+   margin-top: 4%;
+
+   border: 1px inset white;
+   border-radius: 15px;
+
+   overflow: auto;
+}
+
+#profile_img
+{
+   display: none;
+
+   width: 1%;
+   height: auto;
+
+   border: 1px solid white;
+   border-radius: 15px;
+}
+
 h1, #para1, #para2
 {
    display: none;

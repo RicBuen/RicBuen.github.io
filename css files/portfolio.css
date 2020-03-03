@@ -7,3 +7,8 @@ a:hover
    background-color: darkgreen;
    color: white;
 }
+
+.contacts-item
+{
+   color: white;
+}

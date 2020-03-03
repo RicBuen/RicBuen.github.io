@@ -10,32 +10,83 @@
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
           <!-- Bootstrap JS files -->
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
           <!-- Other JS files -->
-          <script src = "js files/portfolio.js"></script>
+          <script src = "js files/index.js"></script>
 
           <!-- Other css files -->
+          <link rel = "stylesheet" href = "css files/index.css"/>
           <link rel = "stylesheet" href = "css files/portfolio.css"/>
+
+          <!-- Icon library -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      </head>
 
-     <body id = "mainbackground">
-          <nav class = "navbar navbar-expand-sm bg-dark justify-content-center">
+     <body id = "mainbackground" onload = "loadBeginning(); loadIntrotext();">
+          <nav class = "navbar navbar-expand-sm bg-dark">
                <ul class = "navbar-nav" style = "font-family: serif;">
                    <li class = "nav-item"> <a class = "nav-link" href = "sections/aboutme.html"> About me </a> </li>
                    <li class = "nav-item"> <a class = "nav-link" href = "sections/skillset.html"> Skills and Knowledge </a> </li>
                    <li class = "nav-item"> <a class = "nav-link" href = "sections/projects.html"> Projects </a> </li>
-                   <li class = "nav-item"> <a class = "nav-link" href = "sections/contacts.html"> Contacts </a> </li>
+               </ul>
+
+               <ul class = "navbar-nav ml-auto" style = "font-family: serif;">
+                   <li class = "nav-item contacts-item">
+                       <a class = "nav-link" data-toggle="popover" title="Need to contact me by phone" data-content="347-891-7947">
+                          <i class = "fa fa-phone"></i>
+                       </a>
+                   </li>
+                   <li class = "nav-item contacts-item">
+                       <a class = "nav-link" data-toggle="popover" title="Need to contact me by email" data-content="rbuen4455@gmail.com">
+                          <i class = "fa fa-google"></i>
+                       </a>
+                   </li>
+                   <li class = "nav-item contacts-item"> <a class = "nav-link" href = "https://github.com/RicBuen"> <i class = "fa fa-github"></i> </a> </li>
                </ul>
           </nav>
 
-          <div id = "welcomepage" style = "font-family: serif; text-align: center; padding-top: 30px;">
-               <h1 style = "padding-top: 10px;"> Hello visitor! </h1>
-               <h5> My name is Ricky Buenafe </h5>
+          <div id = "welcomepage_slideshow">
+               <div class = "slideshow_element fadeEffect">
+                    <div class = "intro">
+                         <p id = "firstPara"> Hello visitor! </p>
+                         <p id = "secondPara"> My name is Ricky </p>
+                    </div>
+               </div>
 
-               <h6 id = "description" style = "padding-top: 50px;"></h6>
+               <div class = "slideshow_element fadeEffect">
+                    <img class = "background-img" src = "backgroundpics/webdeveloper.jpg"/>
+
+                    <div class = "description">
+                         <p> I am a web developer </p>
+                    </div>
+               </div>
+
+               <div class = "slideshow_element fadeEffect">
+                    <img class = "background-img" src = "backgroundpics/appdeveloper.png"/>
+
+                    <div class = "description">
+                         <p> I am an app developer </p>
+                    </div>
+               </div>
+
+               <div class = "slideshow_element fadeEffect">
+                    <img class = "background-img" src = "backgroundpics/databaseadmin.jpg"/>
+
+                    <div class = "description">
+                         <p> I am a database administrator </p>
+                    </div>
+               </div>
+
+               <div class = "slideshow_element fadeEffect">
+                    <img class = "background-img" src = "backgroundpics/freelancer.jpg"/>
+
+                    <div class = "description">
+                         <p> I am a freelancer </p>
+                    </div>
+               </div>
           </div>
      </body>
 </html>
