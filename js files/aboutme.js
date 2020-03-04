@@ -10,7 +10,7 @@ function load_aboutme()
 
 
      $("#profile_img").delay(3000).fadeIn();
-     $("#profile_img").animate({width: '30%', height: 'auto'}, 'slow');
+     $("#profile_img").animate({width: '40%', height: 'auto'}, 'slow');
 
      $("h1").delay(5000).fadeIn();
      $("#para1").delay(6000).fadeIn();
