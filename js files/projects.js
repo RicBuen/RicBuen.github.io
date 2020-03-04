@@ -12,9 +12,13 @@ $(document).ready(function(){
     $('[data-toggle="popover"]').popover();
 });
 
+$(document).ready(function(){
+  $("[data-toggle='tooltip']").tooltip();
+});
+
 function checkos()
 {
-   var downloadlink = "https://github.com/RicBuen/AnonyMail";
+   var downloadlink = "https://1drv.ms/u/s!Auzwb1HXIP44gagC0gaZYd2RhYgjLQ?e=QjZFKE";
    var downloadBtn = document.getElementById("downloadBtn");
 
    if(navigator.appVersion.indexOf("Win") != -1)
@@ -55,10 +59,20 @@ function displayWebProjects()
      }
      else
      {
-        //reveal the web projects list and title
-        $("#webproject_title").fadeIn(2000);
-        $(".web_project_element:nth-of-type(1)").delay(1000).fadeIn(2000);
-        $(".web_project_element:nth-of-type(2)").delay(2000).fadeIn(2000);
+        //if the web projects list and title are not visible, reveal them
+        if($(".web_project_element").is(":hidden"))
+        {
+           $("#webproject_title").fadeIn(2000);
+           $(".web_project_element:nth-of-type(1)").delay(1000).fadeIn(2000);
+           $(".web_project_element:nth-of-type(2)").delay(2000).fadeIn(2000);
+        }
+        //if the user clicks the web projects button again, hide the web projects list and title
+        else
+        {
+           $(".web_project_element:nth-of-type(2)").fadeOut(1000);
+           $(".web_project_element:nth-of-type(1)").delay(1000).fadeOut(1000);
+           $("#webproject_title").delay(2000).fadeOut(1000);
+        }
      }
    });
 }
@@ -79,9 +93,18 @@ function displayAppProjects()
      }
      else
      {
-        //reveal the app projects list and title
-        $("#appproject_title").fadeIn(1000);
-        $(".app_project_element:nth-of-type(1)").delay(1000).fadeIn(2000);
+        //if the app projects list and title are not visible, reveal them
+        if($(".app_project_element").is(":hidden"))
+        {
+           $("#appproject_title").fadeIn(1000);
+           $(".app_project_element:nth-of-type(1)").delay(1000).fadeIn(2000);
+        }
+        //if the user clicks the web projects button again, hide the app projects title and list
+        else
+        {
+           $(".app_project_element:nth-of-type(1)").fadeOut(1000);
+           $("#appproject_title").delay(1000).fadeOut(1000);
+        }
      }
    });
 }

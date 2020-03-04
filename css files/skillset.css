@@ -32,9 +32,10 @@ img
 .list-group
 {
    font-size: 25px;
-
    font-family: 'Courgette', ;
    font-family: 'Orbitron', ;
+
+   margin: 5px;
 }
 
 .language-item, .addknowledge-item, .osknowledge-item

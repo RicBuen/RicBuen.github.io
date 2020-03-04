@@ -23,7 +23,7 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      </head>
 
-     <body onload = "fadeEffect()" style = "background-image: url('../backgroundpics/programmingwallpaper.jpg'); background-repeat: no-repeat; background-size: cover;">
+     <body onload = "fadeEffect()">
           <nav class = "navbar navbar-expand-sm bg-dark justify-content-center">
                <ul class = "navbar-nav" style = "font-family: serif;">
                    <li class = "nav-item"> <a class = "nav-link" href = "aboutme.html"> About me </a> </li>
@@ -42,7 +42,6 @@
                           <i class = "fa fa-google"></i>
                        </a>
                    </li>
-                   <li class = "nav-item contacts-item"> <a class = "nav-link" href = "https://github.com/RicBuen"> <i class = "fa fa-github"></i> </a> </li>
                </ul>
           </nav>
 
@@ -108,7 +107,7 @@
                                  This app does not support sending email from Anonymail to mainstream email clients such as Gmail, Outlook or Yahoo,
                                  and you can only send an recieve emails to users who have an AnonyMail account!
                               </p>
-                              <a id = "downloadBtn" class = "btn btn-success" onclick = "checkos()"> Download app (Only for Windows! Will not work for Mac or Linux!) </a>
+                              <a id = "downloadBtn" class = "btn btn-success" onclick = "checkos()" data-toggle="tooltip" title="Make sure to only download only the entire AnonyMail file! Then find setup.exe and download the app."> Download app (Only for Windows! Will not work for Mac or Linux!) </a>
                          </div>
                     </div>
                </div>
